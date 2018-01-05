@@ -7,3 +7,11 @@ import MenuItem from 'material-ui/MenuItem'
 import IconMenu from  'material-ui/IconMenu'
 import Reorder from 'meterial-ui/svg-icons/action/reorder'
 import './Navigation.css'
+
+const buttonStyle = {
+  marginTop '-6%',
+}
+
+class Navigation extends PureComponent {
+
+}
