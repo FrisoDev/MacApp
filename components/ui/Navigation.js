@@ -1,17 +1,21 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
-import AppBar from 'material-ui/AppBar'
-import IconButton from 'material-ui/IconButton'
-import FlatButton from 'material-ui/FlatButton'
-import MenuItem from 'material-ui/MenuItem'
-import IconMenu from  'material-ui/IconMenu'
-import Reorder from 'meterial-ui/svg-icons/action/reorder'
-import './Navigation.css'
-
-const buttonStyle = {
-  marginTop '-6%',
-}
+import { Toolbar } from 'react-native-material-ui'
 
 class Navigation extends PureComponent {
-
+  render() {
+    return (
+      <Toolbar
+      style=
+      {{
+        position: 'fixed',
+        boxshadow: '0',
+        left: '0',
+        top: '0'
+      }}
+        />
+    )
+  }
 }
+
+export default Navigation
