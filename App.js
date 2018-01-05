@@ -11,6 +11,7 @@ import {
   Text,
   View
 } from 'react-native';
+import NavBar from './components/ui/Navigation.js'
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -22,6 +23,8 @@ const instructions = Platform.select({
 export default class App extends Component<{}> {
   render() {
     return (
+      <div>
+      <NavBar />
       <View style={styles.container}>
         <Text style={styles.welcome}>
           Welcome to React Native!
@@ -33,6 +36,7 @@ export default class App extends Component<{}> {
           {instructions}
         </Text>
       </View>
+      </div>
     );
   }
 }
